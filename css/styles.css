@@ -78,9 +78,9 @@ p {
   margin-left: auto;
   padding-right: 16px;
   padding-left: 16px;
-
+  /* 
   outline: 2px solid red;
-  outline-offset: -2px;
+  outline-offset: -2px; */
 }
 /* 768px <= tablet screen <= infinity*/
 @media screen and (min-width: 768px) {
@@ -328,11 +328,11 @@ p {
 /* Hero section */
 
 .hero {
-  padding: 112px 0px;
   /* max-width: 1440px; */
   height: 600px;
   margin-right: auto;
   margin-left: auto;
+  padding: 112px 0px;
   padding: 188px 0px;
   background-color: var(--dark-bg-cl);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -361,10 +361,10 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero/bg_desktop@1x.webp);
-    max-width: 1440px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px) {
@@ -542,13 +542,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   row-gap: 72px;
-  padding: 0;
   justify-content: center;
+  padding: 0;
 }
 @media screen and (min-width: 768px) {
   .team-list {
-    column-gap: 24px;
     row-gap: 64px;
+    column-gap: 24px;
   }
 }
 
@@ -1207,9 +1207,11 @@ p {
   padding: 0;
   border: none;
   background-color: transparent;
+  /* border-radius: 50%; */
   outline: none;
   cursor: pointer;
 }
+
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
